@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Feedback | Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Submit Course Feedback</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student_login.html">Student</a>
+      <a href="admin_login.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Student Feedback Form</h2>
+      <p>
+        Please fill out the following form to share your feedback about a course and faculty member.
+        Honest and constructive responses help your institution maintain quality education and make learning better for everyone.
+      </p>
+    </section>
+
+    <div class="form-container">
+      <form id="feedbackForm" method="POST">
+        <h2>Feedback Details</h2>
+        <input type="text" name="faculty_name" placeholder="Faculty Name" required>
+        <input type="text" name="course" placeholder="Course Name" required>
+
+        <label for="rating">Rating (1 - 5)</label>
+        <select name="rating" id="rating" required>
+          <option value="">Select Rating</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+
+        <textarea name="comments" placeholder="Write your comments here..." rows="5"></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+
+    <section class="info-section">
+      <h2>Guidelines for Providing Feedback</h2>
+      <p>
+        Before you submit your feedback, please keep the following points in mind:
+      </p>
+      <ul>
+        <li>Be specific and provide examples where possible.</li>
+        <li>Constructive feedback helps improve teaching methods and course design.</li>
+        <li>All responses remain confidential — your identity will not be disclosed.</li>
+      </ul>
+      <p>
+        The data you submit will be securely stored and analyzed by the administration for academic quality assurance.
+      </p>
+    </section>
+
+    <section id="contact" class="info-section">
+      <h2>Need Help?</h2>
+      <p>If you face any issues while submitting feedback, you can reach out to the project developer.</p>
+      <p><strong>Developer:</strong> Aayush Kumar Karn</p>
+      <p><strong>Email:</strong> <a href="mailto:aayushkarn001@gmail.com">aayushkarn001@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/NotAayush7" target="_blank">https://github.com/NotAayush7</a></p>
+      <p><strong>Contact Number:</strong> +91 9473406471</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Feedback Portal | Designed and Developed by Aayush Kumar Karn</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

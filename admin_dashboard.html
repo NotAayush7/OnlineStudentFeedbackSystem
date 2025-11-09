@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Online Student Feedback System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Administrator Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student_login.html">Student</a>
+      <a href="admin_dashboard.html" class="active">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to the Feedback Management Dashboard</h2>
+      <p>
+        This dashboard allows administrators to view, analyze, and manage feedback submitted by students.
+        Use the search box below to filter results by faculty or course name, and view the overall ratings distribution through charts.
+      </p>
+    </section>
+
+    <section class="feedback-section">
+      <h2>All Feedback Records</h2>
+      <input type="text" id="searchBar" placeholder="Search by faculty or course name...">
+
+      <table id="feedbackTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Faculty</th>
+            <th>Course</th>
+            <th>Rating</th>
+            <th>Comments</th>
+            <th>Date Submitted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="7">Loading feedback data...</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="chart-section">
+      <h2>Feedback Statistics Overview</h2>
+      <p>The chart below displays the distribution of student ratings across all courses and faculty members.</p>
+      <canvas id="ratingChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="info-section">
+      <h2>Administrator Insights</h2>
+      <p>
+        The dashboard provides a summarized view of the collected feedback to help administrators make data-driven decisions. 
+        Monitoring trends over time can highlight high-performing faculty members and identify areas that may require academic support.
+      </p>
+      <ul>
+        <li>View all student feedback instantly.</li>
+        <li>Filter data easily using the search bar.</li>
+        <li>Visualize performance using an interactive bar chart.</li>
+        <li>Use collected data for continuous improvement of course quality.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="info-section">
+      <h2>System Maintainer</h2>
+      <p>For technical assistance or customization requests, please contact the project developer below.</p>
+      <p><strong>Developer:</strong> Aayush Kumar Karn</p>
+      <p><strong>Email:</strong> <a href="mailto:aayushkarn001@gmail.com">aayushkarn001@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/NotAayush7" target="_blank">https://github.com/NotAayush7</a></p>
+      <p><strong>Contact Number:</strong> +91 9473406471</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Admin Dashboard | Designed and Developed by Aayush Kumar Karn</p>
+  </footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

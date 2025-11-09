@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Online Feedback System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student_login.html" class="active">Student</a>
+      <a href="admin_login.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to the Student Feedback Portal</h2>
+      <p>
+        This portal allows students to securely register, log in, and share their valuable feedback 
+        about courses and faculty performance. Each response helps improve the overall learning experience.
+      </p>
+      <p>
+        Please use the forms below to log in if you already have an account or to register if you’re a new user.
+      </p>
+    </section>
+
+    <div class="form-container dual-form">
+      <div class="form-box">
+        <form id="loginForm" method="POST">
+          <h2>Student Login</h2>
+          <p>Enter your registered email and password to access the feedback form.</p>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+          <p class="form-note">Haven't registered yet? Use the form on the right to sign up.</p>
+        </form>
+      </div>
+
+      <div class="form-box">
+        <form id="registerForm" method="POST">
+          <h2>Student Registration</h2>
+          <p>New users can create an account by filling in the details below.</p>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Register</button>
+          <p class="form-note">Make sure to use a valid email address for registration.</p>
+        </form>
+      </div>
+    </div>
+
+    <section class="info-section">
+      <h2>Why Provide Feedback?</h2>
+      <p>
+        Your feedback helps faculty understand what works well in a course and what could be improved.
+        Constructive responses help create better study materials, clearer instruction, and a more engaging classroom experience.
+      </p>
+      <ul>
+        <li>Every response remains confidential.</li>
+        <li>Feedback is analyzed for continuous improvement.</li>
+        <li>Your participation contributes to better learning outcomes for everyone.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Feedback Portal | Designed and Developed by Aayush Kumar Karn</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Buttons */
+.btn,
+button {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #004b99;
+  transform: scale(1.05);
+}
+
+/* Main Sections */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.intro,
+.info-section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2,
+.info-section h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.info-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Feature Grid (Index Page) */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.feature {
+  background: #f9fbff;
+  border: 1px solid #dde7f2;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Form Containers */
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.dual-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-box {
+  flex: 1;
+  min-width: 320px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+form p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #003366;
+  box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+  outline: none;
+}
+
+.form-note {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Table (Admin Dashboard) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #003366;
+  color: white;
+}
+
+table tr:hover td {
+  background-color: #f2f7fc;
+}
+
+#searchBar {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px solid #003366;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1em;
+}
+
+#searchBar:focus {
+  box-shadow: 0 0 5px rgba(0, 51, 102, 0.4);
+}
+
+/* Chart Section */
+.chart-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+}
+
+canvas {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-size: 0.95em;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dual-form {
+    flex-direction: column;
+  }
+
+  #searchBar {
+    width: 100%;
+  }
+
+  .btn,
+  button {
+    width: 100%;
+  }
+}
